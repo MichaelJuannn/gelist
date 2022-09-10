@@ -12,10 +12,10 @@ datasource db {
 
 
 model Event {
-  id        String @id @unique
+  id        Int @id @default(autoincrement())
   slug      String
   title     String
-  date      DateTime
+  date      DateTime @db.Date()
   members   Json
   category  String
 }
