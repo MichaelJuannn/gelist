@@ -12,12 +12,12 @@ export default async function handler(req, res) {
 			data: {
 				slug: crypto.randomBytes(10).toString('hex'),
 				title: data.eventTitle,
-				date: new Date(data.eventDate),
+				date: new Date(data.eventDate).toISOString(),
 				category: 'will be added category',
 				members: { organizer: data.organizer },
 			},
 		});
-		res.status(200).json({ user });
+		res.status(200).redirect(`/${user.slug}`);
 	} catch (err) {
 		res.status(500).json({ error: `${err}` });
 	}

@@ -15,7 +15,7 @@ export default function Index() {
 				<input type='text' name='eventTitle' id='eventDescription' />
 			</div>
 			<div>
-				<label htmlFor='eventDate'>Event Name</label>
+				<label htmlFor='eventDate'>Event Date</label>
 				<input type='date' name='eventDate' id='eventDate' />
 			</div>
 			<div>
