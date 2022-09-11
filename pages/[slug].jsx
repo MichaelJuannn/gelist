@@ -13,6 +13,5 @@ export async function getServerSideProps(context) {
 }
 
 export default function Display(props) {
-	console.table(props);
-	return <h1>TESTING</h1>;
+	return <h1 className=''>TESTING</h1>;
 }
