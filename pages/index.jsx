@@ -37,6 +37,7 @@ export function Formevent() {
 						Organizer
 					</label>
 					<input
+						required
 						type='text'
 						name='organizer'
 						id='organizer'
@@ -51,6 +52,7 @@ export function Formevent() {
 						Event Name
 					</label>
 					<input
+						required
 						type='text'
 						name='eventTitle'
 						id='eventDescription'
@@ -65,6 +67,7 @@ export function Formevent() {
 						Event Date
 					</label>
 					<input
+						required
 						type='date'
 						name='eventDate'
 						id='eventDate'
