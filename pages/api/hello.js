@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 				title: data.eventTitle,
 				date: new Date(data.eventDate).toISOString(),
 				category: 'will be added category',
-				members: { organizer: data.organizer },
+				members: { organizer: data.organizer, member: [] },
 			},
 		});
 		res.status(200).redirect(`/${user.slug}`);
