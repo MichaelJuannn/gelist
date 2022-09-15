@@ -14,7 +14,7 @@ export default function Index() {
 
 export function Header() {
 	return (
-		<div className='text-center text-emerald-500 '>
+		<div className='text-center text-emerald-500  '>
 			<div className='text-5xl  m-4'>GeList</div>
 			<div className='text-3xl m-4'>Your Favorite Event Scheduler</div>
 		</div>
