@@ -18,7 +18,7 @@ model Event {
   slug      String @unique
   title     String
   date      String
-  organizer String @default("anonymous")
+  organizer String?
   members   Json
   category  String
 }
