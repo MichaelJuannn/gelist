@@ -22,14 +22,14 @@ export default function App(props) {
 				id='boxEvent'
 				className='capitalize grid gap-2 bg-gray-800 border-2 border-emerald-300 shadow shadow-emerald-500 w-3/4 mx-auto my-10 p-2 rounded text-xl'
 			>
-				<h1 className='ml-2 lg:text-8xl'>{props.title}</h1>
+				<h1 className='ml-2 lg:text-6xl'>{props.title}</h1>
 				<div className='ml-8 -mt-2'>by {props.organizer}</div>
 				<div className='mb-10 mt-2'>{props.date.substring(0, 10)}</div>
 				<div className='grid justify-center'>
-					{tesmembers.map((member, index) => (
-						<Participant key={index} name={member} />
-					))}
 					<form action={`./api/${props.slug}`} method='post'>
+						{tesmembers.map((member, index) => (
+							<Participant key={index} name={member} />
+						))}
 						<input
 							className='bg-gray-700 border border-emerald-300 text-white text-md rounded-lg focus:ring-emerald-500 focus:border-emerald-500 inline w-48 md:w-2/3 p-1 dark:bg-gray-700 dark:border-emerald-600 dark:placeholder-emerald-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500'
 							type='text'

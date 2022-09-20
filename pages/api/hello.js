@@ -13,8 +13,9 @@ export default async function handler(req, res) {
 				slug: crypto.randomBytes(10).toString('hex'),
 				title: data.eventTitle,
 				date: new Date(data.eventDate).toISOString(),
+				members: { member: [] },
+				organizer: data.organizer,
 				category: 'will be added category',
-				members: { organizer: data.organizer, member: [] },
 			},
 		});
 		res.status(200).redirect(`/${user.slug}`);

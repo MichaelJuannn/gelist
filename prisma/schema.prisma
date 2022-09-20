@@ -16,9 +16,9 @@ datasource db {
 model Event {
   id        Int @id @default(autoincrement())
   slug      String @unique
-  title     String
-  date      String
+  title     String?
+  date      String?
   organizer String?
-  members   Json
-  category  String
+  members   Json?
+  category  String?
 }
